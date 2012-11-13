@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Large Blog Entry Extension adding some nice tweaks to the modeladmin interface
+ *
+ * @author Tim Klein, Dodat Ltd <tim(at)doda(dot)co(dot)nz>
+ */
 class LargeBlogEntryExtension extends DataExtension {
 
 	static $summary_fields = array(
