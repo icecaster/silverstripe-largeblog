@@ -1,11 +1,9 @@
 silverstripe-largeblog
 ===============================
-(well, its more a detailform, but who searches for silverstripe versioned gridfield detail form)
-
 
 ## Requirements
 
- * SilverStripe 3.0 or newer
+ * SilverStripe 3.0.x
  * VersionedGridFieldDetailForm ( https://github.com/icecaster/silverstripe-versioned-gridfield )
  
  Not causing any errors if not there, but pointless without -
