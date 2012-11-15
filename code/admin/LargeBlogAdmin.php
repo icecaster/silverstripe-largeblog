@@ -2,7 +2,7 @@
 /**
  * Large Blog Admin for managing lots of blog entries
  *
- * @author Tim Klein, Dodat Ltd <tim(at)doda(dot)co(dot)nz>
+ * @author Tim Klein, Dodat Ltd <tim(at)dodat(dot)co(dot)nz>
  */
 class LargeBlogAdmin extends ModelAdmin {
 
