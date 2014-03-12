@@ -24,6 +24,28 @@ class LargeBlogEntryExtension extends DataExtension {
 		),
 		"Author"
 	);
+	
+	/**
+	* updates the fields used in the CMS
+	* @param FieldSet $fields
+	*/
+	public function updateCMSFields(FieldList $fields){
+		//main tab
+		$fields->addFieldToTab('Root.Main', new DropdownField('ParentID', 'Select a Blog Holder', $this->getBlogHoldersMapped()), 'Content');
+	}
+	
+	/**
+	* returns a map of BlogHolders if any exist.
+	* @return {SS_Map} SS_Map object if Blog holders exist
+	* array if none exist.
+	*/
+	public function getBlogHoldersMapped(){
+		if(BlogHolder::get()->count() >= 1){
+			return BlogHolder::get()->map('ID', 'Title');
+		}else {
+			return array('There are currently no blog holders');
+		}
+	}
 }
 
 
